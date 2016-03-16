@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#worldmap {
+	width: 900px;
+	height: 700px;
+	display: block;
+	background-image:url('/img/worldmap.jpg');
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.tank {
+	width: 32px;
+	height: 32px;
+	display: block;
+	background-image:url('/img/tank.png');
+	background-size: 100% 100%;
+	position: absolute;
+}
