@@ -1,0 +1,24 @@
+{
+  "name": "diplomacy",
+  "version": "0.1.0",
+  "description": "enjoy playing",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lars2510/diplomacy.git"
+  },
+  "keywords": [
+    "diplomacy"
+  ],
+  "author": "lars schuettemeyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lars2510/diplomacy/issues"
+  },
+  "homepage": "https://github.com/lars2510/diplomacy#readme"
+}
