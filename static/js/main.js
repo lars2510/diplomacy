@@ -1,7 +1,6 @@
-function createTank(xPos, yPos) {
+function createShip(xPos, yPos) {
 	var tank = document.createElement("div");
-	tank.style.left = 200
-	tank.classList.add("tank");
+	tank.classList.add("ship");
 	tank.style.top = (yPos - 16) + 'px';
 	tank.style.left = (xPos - 16) + 'px';
 	return tank;
@@ -9,13 +8,11 @@ function createTank(xPos, yPos) {
 
 function appendMapItem(xPos, yPos) {
     var worldmap = document.getElementsByClassName('js_worldmap');
-    worldmap[0].appendChild(createTank(xPos, yPos));
+    worldmap[0].appendChild(createShip(xPos, yPos));
 }
 
 function getClickPosition(e) {
-    var xPos = e.clientX;
-    var yPos = e.clientY;
-    appendMapItem(xPos, yPos)
+    appendMapItem(e.clientX, e.clientY)
 }
 
 function init() {

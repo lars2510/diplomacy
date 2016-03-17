@@ -10,5 +10,3 @@ app.get('/',function(req,res){
 });
 
 app.listen(1337);
-
-console.log("Running at Port 3000");

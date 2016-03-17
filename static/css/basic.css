@@ -12,11 +12,19 @@
 	position: relative;
 }
 
-.tank {
+.tank, .ship {
 	width: 32px;
 	height: 32px;
 	display: block;
 	background-image:url('/img/tank.png');
 	background-size: 100% 100%;
 	position: absolute;
+}
+
+.tank {
+	background-image:url('/img/tank.png');
+}
+
+.ship {
+	background-image:url('/img/ship.png');
 }
