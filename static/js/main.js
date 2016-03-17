@@ -1,16 +1,21 @@
 ;(function (){
-	function createShip(xPos, yPos) {
-		var tank = document.createElement("div");
+
+	function addOffset(elem, xPos, yPos) {
 		var offset = 16;
-		tank.classList.add("ship");
-		tank.style.top = (yPos - offset) + 'px';
-		tank.style.left = (xPos - offset) + 'px';
-		return tank;
+		elem.style.top = (yPos - offset) + 'px';
+		elem.style.left = (xPos - offset) + 'px';
+		return elem;
+	}
+
+	function createFlag(flagName) {
+		var flag = document.createElement("div");
+		flag.classList.add(flagName);
+		return flag;
 	}
 
 	function appendMapItem(xPos, yPos) {
 	    var worldmap = document.getElementsByClassName('js_worldmap');
-	    worldmap[0].appendChild(createShip(xPos, yPos));
+	    worldmap[0].appendChild(addOffset(createFlag("ship"), xPos, yPos));
 	}
 
 	function getClickPosition(e) {
@@ -21,5 +26,7 @@
 		var worldmap = document.getElementsByClassName('js_worldmap');
 		worldmap[0].addEventListener("click", getClickPosition);
 	}
+
 	init();
+	
 })();
