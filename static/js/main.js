@@ -1,8 +1,9 @@
 function createShip(xPos, yPos) {
 	var tank = document.createElement("div");
+	var offset = 16;
 	tank.classList.add("ship");
-	tank.style.top = (yPos - 16) + 'px';
-	tank.style.left = (xPos - 16) + 'px';
+	tank.style.top = (yPos - offset) + 'px';
+	tank.style.left = (xPos - offset) + 'px';
 	return tank;
 }
 
